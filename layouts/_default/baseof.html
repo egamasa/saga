@@ -10,6 +10,14 @@
   <main>
     {{ block "main" . }}{{ end }}
   </main>
+  <aside>
+    <div id="sidebar-primary">
+      {{ partial "sidebar-primary.html" . }}
+    </div>
+    <div id="sidebar-secondary">
+      {{ partial "sidebar-secondary.html" . }}
+    </div>
+  </aside>
   <footer>
     {{ partial "footer.html" . }}
   </footer>
