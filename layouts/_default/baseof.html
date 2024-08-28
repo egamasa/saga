@@ -1,25 +1,30 @@
-<!DOCTYPE html>
-<html lang="{{ or site.Language.LanguageCode }}" dir="{{ or site.Language.LanguageDirection `ltr` }}">
-<head>
-  {{ partial "head.html" . }}
-</head>
-<body>
-  <header>
-    {{ partial "header.html" . }}
-  </header>
-  <main>
-    {{ block "main" . }}{{ end }}
-  </main>
-  <aside>
-    <div id="sidebar-primary">
-      {{ partial "sidebar-primary.html" . }}
+<!doctype html>
+<html
+  lang="{{ or site.Language.LanguageCode }}"
+  dir="{{ or site.Language.LanguageDirection `ltr` }}"
+>
+  <head>
+    {{ partial "head.html" . }}
+  </head>
+  <body>
+    <div id="wrap">
+      <header>
+        {{ partial "header.html" . }}
+      </header>
+      <main>
+        {{ block "main" . }}{{ end }}
+      </main>
+      <aside>
+        <div id="sidebar-primary">
+          {{ partial "sidebar-primary.html" . }}
+        </div>
+        <div id="sidebar-secondary">
+          {{ partial "sidebar-secondary.html" . }}
+        </div>
+      </aside>
+      <footer>
+        {{ partial "footer.html" . }}
+      </footer>
     </div>
-    <div id="sidebar-secondary">
-      {{ partial "sidebar-secondary.html" . }}
-    </div>
-  </aside>
-  <footer>
-    {{ partial "footer.html" . }}
-  </footer>
-</body>
+  </body>
 </html>
