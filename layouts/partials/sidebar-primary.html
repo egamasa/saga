@@ -11,13 +11,6 @@
   {{ partial "widgets/profile" }}
 {{ end }}
 
-
-<ul>
-  {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
-    <li>
-      <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}"
-        >{{ $name }}</a
-      >
-    </li>
-  {{ end }}
-</ul>
+{{ if site.Params.sideBar.showTags }}
+  {{ partial "widgets/categories" }}
+{{ end }}

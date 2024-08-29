@@ -1,0 +1,33 @@
+{{ $data := site.Data.categories.items }}
+
+
+<div class="categories">
+  <div class="widget-title">
+    <span>カテゴリ</span>
+    <small>Categories</small>
+  </div>
+  <ul>
+    {{ range site.Taxonomies.categories.ByCount }}
+      {{ $data := index (where $data "slug" "eq" .Name) 0 }}
+      <li>
+        <a href="{{ "categories" | relURL }}/{{ .Name }}">
+          {{ if $data.icon }}
+            <img src="{{ $data.icon | relURL }}" role="presentation" />
+          {{ end }}
+          <span class="name">
+            {{ if $data }}
+              {{ $data.disp }}
+            {{ else }}
+              {{ .Name }}
+            {{ end }}
+          </span>
+          {{ if $data.desc }}
+            <span class="description">
+              {{ $data.desc }}
+            </span>
+          {{ end }}
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</div>

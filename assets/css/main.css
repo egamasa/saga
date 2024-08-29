@@ -97,6 +97,50 @@ aside > div {
   width: 40px;
 }
 
+/* Widget: Categories */
+.categories ul {
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.categories ul li {
+  border: #333 solid 1px;
+  line-height: 3em;
+  margin: 0;
+  position: relative;
+}
+
+.categories ul li a {
+  align-items: center;
+  color: #333;
+  display: flex;
+  gap: 5px;
+  padding: 0 5px;
+}
+
+.categories ul li a:hover {
+  background-color: #ff6633;
+  color: #fff;
+}
+
+.categories ul li a img {
+  width: 2em;
+}
+
+.categories ul li a .name {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+.categories ul li a .description {
+  font-size: 0.8em;
+}
+
 /* Widget: Tags */
 .tags ul {
   color: #333;
