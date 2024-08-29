@@ -23,4 +23,7 @@
       {{ end }}
     </div>
   {{ end }}
+  {{ if site.Params.sideBar.showSocial }}
+    {{ partial "widgets/social-links" (dict "link" site.Params.social) }}
+  {{ end }}
 </div>

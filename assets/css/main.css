@@ -71,6 +71,26 @@ aside > div {
   font-size: 0.9em;
 }
 
+.profile .social {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: auto;
+  width: 100%;
+}
+
+.profile .social > a {
+  align-items: center;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  width: 50px;
+}
+
+.profile .social > a > img {
+  width: 40px;
+}
+
 footer {
   border-top: 1px solid #222;
   margin-top: 1rem;

@@ -1,0 +1,73 @@
+{{ $link := .link }}
+
+
+<div class="social">
+  {{ if $link.website }}
+    <a href="{{ $link.website }}" aria-label="Visit website" target="_blank">
+      <img
+        src="{{ "svg/tabler-icons/world.svg" | relURL }}"
+        role="presentation"
+      />
+    </a>
+  {{ end }}
+  {{ if $link.email }}
+    <a href="mailto:{{ $link.email }}" aria-label="Send E-mail" target="_blank">
+      <img
+        src="{{ "svg/tabler-icons/mail.svg" | relURL }}"
+        role="presentation"
+      />
+    </a>
+  {{ end }}
+  {{ if $link.github }}
+    <a
+      href="https://github.com/{{ $link.github }}"
+      aria-label="GitHub"
+      target="_blank"
+    >
+      <img
+        src="{{ "svg/tabler-icons/brand-github.svg" | relURL }}"
+        role="presentation"
+      />
+    </a>
+  {{ end }}
+  {{ if $link.twitter }}
+    <a
+      href="https://x.com/{{ $link.twitter }}"
+      aria-label="X (Twitter)"
+      target="_blank"
+    >
+      <img
+        src="{{ "svg/tabler-icons/brand-x.svg" | relURL }}"
+        role="presentation"
+      />
+    </a>
+  {{ end }}
+  {{ if $link.instagram }}
+    <a
+      href="https://www.instagram.com/{{ $link.instagram }}"
+      aria-label="Instagram"
+      target="_blank"
+    >
+      <img
+        src="{{ "svg/tabler-icons/brand-instagram.svg" | relURL }}"
+        role="presentation"
+      />
+    </a>
+  {{ end }}
+  {{ if $link.facebook }}
+    <a href="{{ $link.facebook }}" aria-label="Facebook" target="_blank">
+      <img
+        src="{{ "svg/tabler-icons/brand-facebook.svg" | relURL }}"
+        role="presentation"
+      />
+    </a>
+  {{ end }}
+  {{ if $link.youtube }}
+    <a href="{{ $link.youtube }}" aria-label="YouTube" target="_blank">
+      <img
+        src="{{ "svg/tabler-icons/brand-youtube.svg" | relURL }}"
+        role="presentation"
+      />
+    </a>
+  {{ end }}
+</div>
