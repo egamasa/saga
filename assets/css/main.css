@@ -1,3 +1,4 @@
+/* Common */
 body {
   color: #222;
   font-family: sans-serif;
@@ -18,16 +19,19 @@ img {
   max-width: 1280px;
 }
 
+/* header */
 header {
   border-bottom: 1px solid #222;
   margin-bottom: 1rem;
   width: 100%;
 }
 
+/* main */
 main {
   width: calc(100% - 300px);
 }
 
+/* Sidebar */
 aside {
   display: flex;
   flex-direction: column;
@@ -38,6 +42,7 @@ aside > div {
   width: 100%;
 }
 
+/* Profile */
 .profile {
   display: flex;
   flex-direction: row;
@@ -91,12 +96,14 @@ aside > div {
   width: 40px;
 }
 
+/* footer */
 footer {
   border-top: 1px solid #222;
   margin-top: 1rem;
   width: 100%;
 }
 
+/* Responsive */
 @media all and (max-width: 1024px) {
   header,
   main,
@@ -106,7 +113,7 @@ footer {
   }
 
   aside {
-    flex-direction: row;
+    flex-direction: row-reverse;
   }
 
   aside > div {
