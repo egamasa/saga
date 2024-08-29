@@ -42,7 +42,7 @@ aside > div {
   width: 100%;
 }
 
-/* Profile */
+/* Widget: Profile */
 .profile {
   display: flex;
   flex-direction: row;
@@ -76,6 +76,7 @@ aside > div {
   font-size: 0.9em;
 }
 
+/* Widget: Social links */
 .profile .social {
   display: flex;
   flex-wrap: wrap;
@@ -94,6 +95,48 @@ aside > div {
 
 .profile .social > a > img {
   width: 40px;
+}
+
+/* Widget: Tags */
+.tags ul {
+  color: #333;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.9em;
+  gap: 5px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.tags ul li {
+  border: #333 solid 1px;
+  margin: 0;
+  position: relative;
+}
+
+.tags ul li a {
+  align-items: center;
+  color: #333;
+  display: flex;
+  padding: 3px 3px 3px 21px;
+}
+
+.tags ul li a::before {
+  background-image: url(../svg/tabler-icons/tag.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  content: "";
+  height: 15px;
+  left: 3px;
+  margin: auto;
+  position: absolute;
+  width: 15px;
+}
+
+.tags ul li a:hover {
+  background-color: #ff6633;
+  color: #fff;
 }
 
 /* footer */

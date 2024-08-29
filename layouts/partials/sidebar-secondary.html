@@ -1,1 +1,3 @@
-<P>Sidebar Secondary</P>
+{{ if site.Params.sideBar.showTags }}
+  {{ partial "widgets/tags" }}
+{{ end }}

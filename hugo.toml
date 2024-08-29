@@ -39,3 +39,4 @@ weight = 30
   [params.sideBar]
     showAuthor = true
     showSocial = true
+    showTags = true

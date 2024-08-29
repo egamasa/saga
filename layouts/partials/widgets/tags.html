@@ -1,0 +1,25 @@
+{{ $data := site.Data.tags.items }}
+
+
+<div class="tags">
+  <div class="widget-title">
+    <span>タグ</span>
+    <small>Tags</small>
+  </div>
+  <ul>
+    {{ range site.Taxonomies.tags.ByCount }}
+      {{ $mapping := index (where $data "en" "eq" .Name) 0 }}
+      <li>
+        <a href="{{ "tags" | relURL }}/{{ .Name }}">
+          <span
+            >{{ if $mapping }}
+              {{ $mapping.ja }}
+            {{ else }}
+              {{ .Name }}
+            {{ end }}
+          </span>
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</div>
