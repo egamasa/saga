@@ -1,1 +1,23 @@
-<P>Sidebar Primary</P>
+{{ $author := false }}
+{{ $authorDescription := false }}
+{{ if site.Params.author }}
+  {{ $author = site.Params.author }}
+{{ end }}
+{{ if site.Params.authorDescription }}
+  {{ $authorDescription = site.Params.authorDescription }}
+{{ end }}
+
+{{ if site.Params.sideBar.showAuthor }}
+  {{ partial "widgets/profile" }}
+{{ end }}
+
+
+<ul>
+  {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+    <li>
+      <a href="{{ "/categories/" | relLangURL }}{{ $name | urlize }}"
+        >{{ $name }}</a
+      >
+    </li>
+  {{ end }}
+</ul>

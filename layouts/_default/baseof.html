@@ -4,22 +4,22 @@
   dir="{{ or site.Language.LanguageDirection `ltr` }}"
 >
   <head>
-    {{ partial "head.html" . }}
+    {{ partial "head" . }}
   </head>
   <body>
     <div id="wrap">
       <header>
-        {{ partial "header.html" . }}
+        {{ partial "header" . }}
       </header>
       <main>
         {{ block "main" . }}{{ end }}
       </main>
       <aside>
         <div id="sidebar-primary">
-          {{ partial "sidebar-primary.html" . }}
+          {{ partial "sidebar-primary" . }}
         </div>
         <div id="sidebar-secondary">
-          {{ partial "sidebar-secondary.html" . }}
+          {{ partial "sidebar-secondary" . }}
         </div>
       </aside>
       <footer>

@@ -5,6 +5,11 @@ body {
   margin: 1rem;
 }
 
+img {
+  height: auto;
+  width: 100%;
+}
+
 #wrap {
   display: flex;
   flex-wrap: wrap;
@@ -31,6 +36,39 @@ aside {
 
 aside > div {
   width: 100%;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.profile .avatar {
+  height: 30%;
+  margin: auto;
+  width: 30%;
+}
+
+.profile .avatar > img {
+  border-radius: 50%;
+}
+
+.profile .text {
+  padding: 0 0 0 10px;
+  width: 70%;
+}
+
+.profile .text p {
+  margin: 10px;
+}
+
+.profile .text .name {
+  font-weight: bold;
+}
+
+.profile .text .description {
+  font-size: 0.9em;
 }
 
 footer {

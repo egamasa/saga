@@ -1,0 +1,26 @@
+<div class="profile">
+  {{ if site.Params.authorImage }}
+    <div class="avatar">
+      <img
+        src="{{ site.Params.authorImage | relURL }}"
+        aria-label="Author's bio picture"
+      />
+    </div>
+  {{ end }}
+  {{ if site.Params.author }}
+    <div class="text">
+      <div class="name">
+        <p>
+          {{ site.Params.author }}
+        </p>
+      </div>
+      {{ if site.Params.authorDescription }}
+        <div class="description">
+          <p>
+            {{ site.Params.authorDescription }}
+          </p>
+        </div>
+      {{ end }}
+    </div>
+  {{ end }}
+</div>
