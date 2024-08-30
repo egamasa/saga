@@ -6,7 +6,14 @@
   {{- else }}
     {{- $opts := dict "minify" true }}
     {{- with . | js.Build $opts | fingerprint }}
-      <script src="{{ .RelPermalink }}" integrity="{{- .Data.Integrity }}" crossorigin="anonymous"></script>
+      <script
+        src="{{ .RelPermalink }}"
+        integrity="{{- .Data.Integrity }}"
+        crossorigin="anonymous"
+      ></script>
     {{- end }}
   {{- end }}
+{{- end }}
+{{ range site.Params.customJs -}}
+  <script src="{{ . | absURL }}"></script>
 {{- end }}

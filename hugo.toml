@@ -26,6 +26,8 @@ weight = 30
   author = 'Blog autohr name'
   authorImage = 'author.jpg'
   authorDescription = 'Blog author description.'
+  customCss = []
+  customJs = []
 
 [params.sideBar]
   showAuthor = true
