@@ -8,9 +8,6 @@
   </head>
   <body>
     <div id="wrap">
-      <header>
-        {{ partial "header" . }}
-      </header>
       <main>
         {{ block "main" . }}{{ end }}
       </main>
@@ -22,9 +19,9 @@
           {{ partial "sidebar-secondary" . }}
         </div>
       </aside>
-      <footer>
-        {{ partial "footer.html" . }}
-      </footer>
     </div>
+    <footer>
+      {{ partial "footer.html" . }}
+    </footer>
   </body>
 </html>
