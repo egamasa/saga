@@ -140,7 +140,7 @@ aside > div {
 
 /* Widget: Profile */
 .profile {
-  border: #222 solid 2px;
+  border: #9d9287 solid 2px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -174,24 +174,76 @@ aside > div {
 }
 
 /* Widget: Social links */
-.profile .social {
+.social {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   margin: auto;
+  row-gap: 5px;
   width: 100%;
 }
 
-.profile .social > a {
+.social > a {
   align-items: center;
+  border-radius: 8px;
   display: flex;
   height: 50px;
   justify-content: center;
   width: 50px;
 }
 
-.profile .social > a > img {
+.social > a:hover {
+  background-color: #ff6633;
+}
+
+.social > a:hover > span.icon {
+  background-color: #fff;
+}
+
+.social > a > span.icon {
+  content: "";
+  display: inline-block;
+  height: 40px;
+  -webkit-mask-size: cover;
+  mask-size: cover;
+  vertical-align: middle;
   width: 40px;
+}
+
+.icon.website {
+  background-color: #295782;
+  -webkit-mask: url(../svg/tabler-icons/world.svg);
+  mask: url(../svg/tabler-icons/world.svg);
+}
+.icon.email {
+  background-color: #649f44;
+  -webkit-mask: url(../svg/tabler-icons/mail.svg);
+  mask: url(../svg/tabler-icons/mail.svg);
+}
+.icon.github {
+  background-color: var(--github);
+  -webkit-mask: url(../svg/tabler-icons/brand-github.svg);
+  mask: url(../svg/tabler-icons/brand-github.svg);
+}
+.icon.twitter {
+  background-color: var(--twitter);
+  -webkit-mask: url(../svg/tabler-icons/brand-x.svg);
+  mask: url(../svg/tabler-icons/brand-x.svg);
+}
+.icon.instagram {
+  background-color: var(--instagram);
+  -webkit-mask: url(../svg/tabler-icons/brand-instagram.svg);
+  mask: url(../svg/tabler-icons/brand-instagram.svg);
+}
+.icon.facebook {
+  background-color: var(--facebook);
+  -webkit-mask: url(../svg/tabler-icons/brand-facebook.svg);
+  mask: url(../svg/tabler-icons/brand-facebook.svg);
+}
+.icon.youtube {
+  background-color: var(--youtube);
+  -webkit-mask: url(../svg/tabler-icons/brand-youtube.svg);
+  mask: url(../svg/tabler-icons/brand-youtube.svg);
 }
 
 /* Widget: Categories */
