@@ -1,9 +1,13 @@
 /* Common */
 body {
+  background-color: #fff;
   color: #222;
   font-family: sans-serif;
   line-height: 1.5;
-  margin: 1rem;
+}
+
+main {
+  margin: 0 1rem 0 0;
 }
 
 img {
@@ -17,6 +21,7 @@ img {
   justify-content: space-between;
   margin: auto;
   max-width: 1280px;
+  padding: 0 1rem;
 }
 
 /* header */
@@ -185,18 +190,51 @@ aside > div {
 
 /* footer */
 footer {
-  border-top: 1px solid #222;
-  margin-top: 1rem;
-  width: 100%;
+  align-items: center;
+  background-color: #3e622a;
+  border-top: #ff6633 solid 5px;
+  color: #f1f8f7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1em 0 0;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 100%;
+  max-width: 1280px;
+  padding: 1em;
+}
+
+footer .container p {
+  font-size: 0.9em;
+  margin: 0;
+  text-align: center;
+}
+
+footer .container a,
+footer .container a:visited {
+  color: #fff;
+}
+
+footer .container a,
+footer .container a:hover {
+  text-decoration: underline;
 }
 
 /* Responsive */
 @media all and (max-width: 1024px) {
   header,
   main,
-  aside,
-  footer {
+  aside {
     width: 100%;
+  }
+
+  main {
+    margin: 0;
   }
 
   aside {

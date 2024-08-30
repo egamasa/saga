@@ -1,1 +1,30 @@
-<p>Copyright {{ now.Year }}. All rights reserved.</p>
+<div class="container">
+  <p>
+    &copy;
+    {{ if site.Params.footer.sinceYear }}
+      {{ site.Params.footer.sinceYear }} -
+    {{ end }}
+    {{ now.Year }}
+    {{ if site.Params.footer.copyrightName }}
+      {{ if site.Params.footer.copyrightUrl }}
+        <a
+          href="{{ site.Params.footer.copyrightUrl }}"
+          aria-label="{{ site.Params.footer.copyrightName }}"
+          target="_blank"
+        >
+          {{ site.Params.footer.copyrightName }}
+        </a>
+      {{ else }}
+        {{ site.Params.footer.copyrightName }}
+      {{ end }}
+    {{ else }}
+      All rights reserved.
+    {{ end }}
+  </p>
+  <p>
+    Powered by
+    <a href="https://gohugo.io/" aria-label="Hugo website" target="_blank">
+      Hugo
+    </a>
+  </p>
+</div>

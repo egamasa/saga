@@ -36,7 +36,7 @@ weight = 30
     facebook = 'https://www.facebook.com/facebook'
     youtube = 'https://www.youtube.com/user/YouTubeJapan'
 
-  [params.sideBar]
-    showAuthor = true
-    showSocial = true
-    showTags = true
+[params.footer]
+  copyrightName = 'example.com'
+  copyrightUrl = 'https://example.com'
+  sinceYear = 2020
