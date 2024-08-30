@@ -55,7 +55,47 @@ header#top .container {
 
 header#top .container h1 {
   font-size: 3em;
-  text-shadow: 1px 1px #333;
+  text-shadow: 1px 1px #5690c7;
+}
+
+header#top ul.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  margin: auto;
+  max-width: 640px;
+  padding: 0;
+}
+
+header#top ul.menu li {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-left: 2px solid #9d9287;
+  flex-grow: 1;
+  font-size: 1.5rem;
+  line-height: 3rem;
+  margin: 0;
+  position: relative;
+}
+
+header#top ul.menu li:last-child {
+  border-right: 2px solid #9d9287;
+}
+
+header#top ul.menu li a {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+header#top ul.menu li a,
+header#top ul.menu li a:visited {
+  color: #f1f8f7;
+}
+
+header#top ul.menu li a:hover {
+  background-color: #ff6633;
 }
 
 /* main */
