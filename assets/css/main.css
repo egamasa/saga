@@ -1,3 +1,22 @@
+/* Brand colors */
+:root {
+  --facebook: #1877f2;
+  --feedly: #2bb24c;
+  --github: #0e0c0d;
+  --hatena: #008fde;
+  --instagram: #e1306c;
+  --line: #06c755;
+  --twitter: #14171a;
+  --youtube: #ff0000;
+}
+
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --github: #fafafa;
+    --twitter: #f5f8fa;
+  }
+} */
+
 /* Common */
 body {
   background-color: #f1f8f7;
