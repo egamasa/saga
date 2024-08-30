@@ -1,6 +1,6 @@
 /* Common */
 body {
-  background-color: #fff;
+  background-color: #f1f8f7;
   color: #222;
   font-family: sans-serif;
   line-height: 1.5;
@@ -16,12 +16,13 @@ img {
 }
 
 #wrap {
+  background-color: #fff;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: auto;
   max-width: 1280px;
-  padding: 0 1rem;
+  padding: 1rem;
 }
 
 /* header */
@@ -37,7 +38,6 @@ header#top {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-bottom: 1em;
   min-height: 250px;
   width: 100%;
 }
@@ -60,7 +60,7 @@ header#top .container h1 {
 
 /* main */
 main {
-  width: calc(100% - 300px);
+  width: calc(100% - 300px - 1rem);
 }
 
 /* Sidebar */
@@ -74,8 +74,14 @@ aside > div {
   width: 100%;
 }
 
+.widget {
+  border-radius: 10px;
+  padding: 10px;
+}
+
 /* Widget: Profile */
 .profile {
+  border: #222 solid 2px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -97,7 +103,7 @@ aside > div {
 }
 
 .profile .text p {
-  margin: 10px;
+  margin: 10px 0;
 }
 
 .profile .text .name {
@@ -224,7 +230,6 @@ footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 1em 0 0;
 }
 
 footer .container {
