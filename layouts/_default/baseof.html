@@ -7,6 +7,9 @@
     {{ partial "head" . }}
   </head>
   <body>
+    <header id="top">
+      {{ partial "header" . }}
+    </header>
     <div id="wrap">
       <main>
         {{ block "main" . }}{{ end }}
