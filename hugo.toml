@@ -27,14 +27,19 @@ weight = 30
   authorImage = 'author.jpg'
   authorDescription = 'Blog author description.'
 
-  [params.social]
-    website = 'https://example.com/my_url'
-    email = 'my_email@example.com'
-    github = 'github'
-    twitter = 'twitter'
-    instagram = 'instagram'
-    facebook = 'https://www.facebook.com/facebook'
-    youtube = 'https://www.youtube.com/user/YouTubeJapan'
+[params.sideBar]
+  showAuthor = true
+  showSocial = true
+  showTags = true
+
+[params.social]
+  website = 'https://example.com/my_url'
+  email = 'my_email@example.com'
+  github = 'github'
+  twitter = 'twitter'
+  instagram = 'instagram'
+  facebook = 'https://www.facebook.com/facebook'
+  youtube = 'https://www.youtube.com/user/YouTubeJapan'
 
 [params.footer]
   copyrightName = 'example.com'
