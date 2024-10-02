@@ -1,0 +1,20 @@
+{
+  "name": "saga",
+  "version": "1.0.0",
+  "description": "Hugo simple blog theme for Japanese language",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "prettier-plugin-go-template": "^0.0.15",
+    "stylelint": "^16.9.0",
+    "stylelint-config-recess-order": "^5.1.1",
+    "stylelint-config-standard-scss": "^13.1.0",
+    "stylelint-prettier": "^5.0.2"
+  }
+}
