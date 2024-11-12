@@ -141,6 +141,10 @@ aside > div {
   border-radius: 8px;
 }
 
+.widget .title {
+  font-size: 1.3em;
+}
+
 /* Widget: Profile */
 .profile {
   display: flex;

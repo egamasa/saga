@@ -1,10 +1,9 @@
 {{ $data := site.Data.categories.items }}
 
 
-<div class="categories">
-  <div class="widget-title">
+<div class="categories widget">
+  <div class="title">
     <span>カテゴリ</span>
-    <small>Categories</small>
   </div>
   <ul>
     {{ range site.Taxonomies.categories.ByCount }}
