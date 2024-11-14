@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="{{ "css/modern-normalize.min.css" | relURL }}" />
+<link rel="stylesheet" href="{{ "css/github-markdown-dark.css" | relURL }}" />
 {{- with resources.Get "css/main.css" }}
   {{- if eq hugo.Environment "development" }}
     <link rel="stylesheet" href="{{ .RelPermalink }}" />

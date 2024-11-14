@@ -25,16 +25,6 @@ body {
   background-color: #f1f8f7;
 }
 
-main {
-  width: calc(100% - 300px - 1rem);
-  margin: 0 1rem 0 0;
-}
-
-img {
-  width: 100%;
-  height: auto;
-}
-
 #wrap {
   display: flex;
   flex-wrap: wrap;
@@ -43,6 +33,36 @@ img {
   padding: 1rem;
   margin: auto;
   background-color: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+/* Override github-markdown-css */
+main {
+  width: calc(100% - 300px - 1rem);
+  margin: 0 1rem 0 0;
+  color: inherit;
+  background-color: initial;
+}
+
+main kbd {
+  color: inherit;
+  background-color: inherit;
+}
+
+main table tr {
+  background-color: inherit;
+}
+
+main table tr:nth-child(2n) {
+  background-color: #f1f8f7;
+}
+
+main .footnotes li:target {
+  color: inherit;
 }
 
 /* header */
