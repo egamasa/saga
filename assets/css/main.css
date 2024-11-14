@@ -143,6 +143,7 @@ aside > div {
 
 .widget .title {
   font-size: 1.3em;
+  padding: 0 0 5px 0;
 }
 
 /* Widget: Profile */
@@ -263,15 +264,15 @@ aside > div {
 .categories ul li {
   position: relative;
   margin: 0;
-  line-height: 3em;
-  /* border: #333 solid 1px; */
+  line-height: 2.5em;
+  background-color: #f1f8f7;
 }
 
 .categories ul li a {
   display: flex;
   gap: 5px;
   align-items: center;
-  padding: 0 5px;
+  padding: 0 8px;
   color: #333;
 }
 
@@ -285,7 +286,7 @@ aside > div {
 }
 
 .categories ul li a .name {
-  font-size: 1.3em;
+  font-size: 1.2em;
   font-weight: bold;
 }
 
@@ -308,12 +309,13 @@ aside > div {
 .tags ul li {
   position: relative;
   margin: 0;
+  background-color: #f1f8f7;
 }
 
 .tags ul li a {
   display: flex;
   align-items: center;
-  padding: 3px 3px 3px 21px;
+  padding: 3px 5px 3px 21px;
   color: #333;
 }
 
