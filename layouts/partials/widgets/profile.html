@@ -1,10 +1,7 @@
-<div class="profile widget">
+<div class="widget profile">
   {{ if site.Params.authorImage }}
     <div class="avatar">
-      <img
-        src="{{ site.Params.authorImage | relURL }}"
-        aria-label="Author's bio picture"
-      />
+      <img src="{{ site.Params.authorImage | relURL }}" aria-label="Author's bio picture" />
     </div>
   {{ end }}
   {{ if site.Params.author }}

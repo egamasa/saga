@@ -143,6 +143,78 @@ header#top ul.menu li a:hover {
   background-color: #f63;
 }
 
+/* Article metadata */
+article .metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin: 0 0 15px 0;
+  color: #333;
+}
+
+article .metadata a {
+  text-decoration: none;
+}
+
+article .categories ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  padding: 0;
+  margin: 0;
+  font-size: 0.9em;
+  list-style: none;
+}
+
+article .categories ul li {
+  position: relative;
+  margin: 0;
+  background-color: #f1f8f7;
+}
+
+article .categories ul li a {
+  display: flex;
+  align-items: center;
+  padding: 3px 5px 3px 21px;
+  color: #333;
+}
+
+article .categories ul li a::before {
+  position: absolute;
+  left: 3px;
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  content: "";
+  background-image: url("../svg/tabler-icons/folder.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
+article time {
+  position: relative;
+  margin: 0;
+}
+
+article time span {
+  display: flex;
+  align-items: center;
+  padding: 3px 0 3px 21px;
+  font-size: 0.9em;
+}
+
+article time span::before {
+  position: absolute;
+  left: 3px;
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  content: "";
+  background-image: url("../svg/tabler-icons/calendar-month.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+}
+
 /* Sidebar */
 aside {
   display: flex;
@@ -271,7 +343,7 @@ aside > div {
 }
 
 /* Widget: Categories */
-.categories ul {
+.widget.categories ul {
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -281,14 +353,14 @@ aside > div {
   list-style: none;
 }
 
-.categories ul li {
+.widget.categories ul li {
   position: relative;
   margin: 0;
   line-height: 2.5em;
   background-color: #f1f8f7;
 }
 
-.categories ul li a {
+.widget.categories ul li a {
   display: flex;
   gap: 5px;
   align-items: center;
@@ -301,16 +373,16 @@ aside > div {
   background-color: #f63;
 }
 
-.categories ul li a img {
+.widget.categories ul li a img {
   width: 2em;
 }
 
-.categories ul li a .name {
+.widget.categories ul li a .name {
   font-size: 1.2em;
   font-weight: bold;
 }
 
-.categories ul li a .description {
+.widget.categories ul li a .description {
   font-size: 0.8em;
 }
 

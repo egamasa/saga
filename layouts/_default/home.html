@@ -1,7 +1,10 @@
 {{ define "main" }}
   {{ .Content }}
   {{ range site.RegularPages }}
-    <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-    {{ .Summary }}
+    <article>
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      {{ partial "article/metadata" . }}
+      {{ .Summary }}
+    </article>
   {{ end }}
 {{ end }}

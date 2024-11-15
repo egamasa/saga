@@ -1,0 +1,49 @@
+<section class="metadata">
+  {{ $categoriesData := site.Data.categories.items }}
+  <div class="categories">
+    <ul>
+      {{ range .Params.categories }}
+        {{ $mapping := index (where $categoriesData "slug" "eq" .) 0 }}
+        <li>
+          <a href="{{ "categories" | relURL }}/{{ . }}">
+            <span>
+              {{ if $mapping }}
+                {{ $mapping.disp }}
+              {{ else }}
+                {{ . }}
+              {{ end }}
+            </span>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+
+  {{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
+  {{ $dateHuman := .Date | time.Format "2006/01/02" }}
+  <time datetime="{{ $dateMachine }}">
+    <span>
+      {{ $dateHuman }}（{{ index (slice "日" "月" "火" "水" "木" "金" "土") .Date.Weekday }}）
+    </span>
+  </time>
+
+  {{ $tagsData := site.Data.tags.items }}
+  <div class="tags">
+    <ul>
+      {{ range .Params.tags }}
+        {{ $mapping := index (where $tagsData "en" "eq" .) 0 }}
+        <li>
+          <a href="{{ "tags" | relURL }}/{{ . }}">
+            <span>
+              {{ if $mapping }}
+                {{ $mapping.ja }}
+              {{ else }}
+                {{ . }}
+              {{ end }}
+            </span>
+          </a>
+        </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>
