@@ -2,7 +2,10 @@
   <article>
     <h1>{{ .Title }}</h1>
 
-    {{ partial "article/metadata" . }}
+    <section class="metadata">
+      {{ partial "article/metadata" . }}
+      {{ partial "article/share" . }}
+    </section>
 
     {{ .Content }}
     {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}

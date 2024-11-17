@@ -3,7 +3,10 @@
   {{ range site.RegularPages }}
     <article>
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      {{ partial "article/metadata" . }}
+      <section class="metadata">
+        {{ partial "article/metadata" . }}
+        {{ partial "article/share" . }}
+      </section>
       {{ .Summary }}
     </article>
   {{ end }}

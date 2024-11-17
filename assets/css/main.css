@@ -215,6 +215,56 @@ article time span::before {
   background-size: 100% auto;
 }
 
+article .share {
+  display: flex;
+  gap: 3px;
+}
+
+.share > span {
+  display: flex;
+  align-items: center;
+  padding: 0 0 0 5px;
+  font-size: 0.9em;
+}
+
+.share > span::after {
+  content: "";
+  width: 9px;
+  height: 10px;
+  margin: 0 0 0 3px;
+  border-style: solid;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 9px solid #333;
+  border-right: 0;
+}
+
+.share > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 27px;
+  height: 27px;
+  border-radius: 5px;
+}
+
+.share > a:hover {
+  background-color: #f63;
+}
+
+.share > a:hover > span.icon {
+  background-color: #fff;
+}
+
+.share > a > span.icon {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+  content: "";
+  mask-size: cover;
+}
+
 /* Sidebar */
 aside {
   display: flex;
