@@ -8,7 +8,7 @@
   --instagram: #e4405f;
   --line: #00c300;
   --twitter: #000000;
-  --youtube: #f00;
+  --youtube: #ff0000;
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -395,7 +395,7 @@ aside > div {
 
 .icon.youtube {
   background-color: var(--youtube);
-  mask: url("../svg/tabler-icons/brand-youtube.svg");
+  mask: url("../svg/simple-icons/youtube.svg");
 }
 
 .icon.hatena {
