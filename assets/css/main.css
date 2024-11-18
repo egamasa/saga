@@ -266,6 +266,33 @@ article .share {
   mask-size: cover;
 }
 
+.share a.copy-url {
+  position: relative;
+  width: auto;
+  padding: 0 3px 0 25px;
+  font-size: 0.8em;
+  color: #333;
+}
+
+.share a.copy-url > span::before {
+  position: absolute;
+  left: 3px;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-color: #333;
+  mask: url("../svg/tabler-icons/link.svg");
+  mask-size: cover;
+}
+
+.share a.copy-url:hover > span {
+  color: #fff;
+}
+
+.share a.copy-url:hover > span::before {
+  background-color: #fff;
+}
+
 /* Sidebar */
 aside {
   display: flex;

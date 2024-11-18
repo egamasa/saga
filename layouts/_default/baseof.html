@@ -26,5 +26,11 @@
     <footer>
       {{ partial "footer.html" . }}
     </footer>
+
+    <script>
+      function copyToClipboard(text) {
+        navigator.clipboard.writeText(text).then(() => alert("URLをコピーしました！"));
+      }
+    </script>
   </body>
 </html>
