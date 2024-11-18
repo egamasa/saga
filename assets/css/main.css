@@ -7,7 +7,7 @@
   --hatena: #00a4de;
   --instagram: #e4405f;
   --line: #00c300;
-  --twitter: #14171a;
+  --twitter: #000000;
   --youtube: #f00;
 }
 
@@ -375,7 +375,7 @@ aside > div {
 
 .icon.twitter {
   background-color: var(--twitter);
-  mask: url("../svg/tabler-icons/brand-x.svg");
+  mask: url("../svg/simple-icons/x.svg");
 }
 
 .icon.bluesky {
