@@ -1,13 +1,16 @@
 {{ define "main" }}
   {{ .Content }}
   {{ range site.RegularPages }}
-    <article>
+    <article class="list">
       <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
-      <section class="metadata">
+
+      <div class="metadata">
         {{ partial "article/metadata" . }}
-        {{ partial "article/share" . }}
-      </section>
-      {{ .Summary }}
+      </div>
+
+      <div class="content">
+        {{ .Summary }}
+      </div>
     </article>
   {{ end }}
 {{ end }}

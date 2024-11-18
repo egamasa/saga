@@ -44,6 +44,7 @@ img {
 /* Override github-markdown-css */
 main {
   width: calc(100% - 300px - 1rem);
+  padding: 0 0.5rem;
   margin: 0 1rem 0 0;
   color: inherit;
   background-color: initial;
@@ -156,10 +157,6 @@ article.single .title h1 {
   padding: 0 0 0.25rem;
   margin: 0;
   border-bottom: none;
-}
-
-article .content {
-  padding: 0 0.5rem;
 }
 
 /* Article metadata */
@@ -311,6 +308,28 @@ article .share {
 
 .share a.copy-url:hover > span::before {
   background-color: #fff;
+}
+
+/* Article (List page) */
+article.list {
+  padding: 0.5rem 0 1rem;
+}
+
+article.list h2 {
+  padding: 0.5rem 0;
+  margin: 0;
+  border: none;
+}
+
+article.list .metadata {
+  padding: 0.5rem 0 0.75rem;
+  margin: 0;
+  border-top: 2px solid #9d9287;
+}
+
+/* Article content */
+article .content {
+  padding: 0 0.5rem;
 }
 
 /* Sidebar */
@@ -603,6 +622,12 @@ footer .container a:hover {
   aside {
     flex-direction: row-reverse;
     gap: 15px;
+  }
+}
+
+@media all and (width <= 768px) {
+  main {
+    padding: 0;
   }
 }
 
