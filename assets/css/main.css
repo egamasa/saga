@@ -3,7 +3,7 @@
   --bluesky: #0285ff;
   --facebook: #0866ff;
   --feedly: #2bb24c;
-  --github: #0e0c0d;
+  --github: #181717;
   --hatena: #00a4de;
   --instagram: #e4405f;
   --line: #00c300;
@@ -370,7 +370,7 @@ aside > div {
 
 .icon.github {
   background-color: var(--github);
-  mask: url("../svg/tabler-icons/brand-github.svg");
+  mask: url("../svg/simple-icons/github.svg");
 }
 
 .icon.twitter {
