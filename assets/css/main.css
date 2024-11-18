@@ -332,6 +332,25 @@ article .content {
   padding: 0 0.5rem;
 }
 
+article .content p:has(> img) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 記事画像 2枚以上連続の場合、幅50%（横に並べる） */
+article .content p:has(> img) img {
+  box-sizing: border-box;
+  width: calc(50% - 10px);
+}
+
+/* 記事画像 1枚だけの場合、幅80% */
+article .content p:has(> img:only-child) img {
+  width: 80%;
+}
+
 /* Sidebar */
 aside {
   display: flex;
@@ -625,9 +644,18 @@ footer .container a:hover {
   }
 }
 
-@media all and (width <= 768px) {
+@media all and (width < 768px) {
   main {
     padding: 0;
+  }
+
+  article .content p:has(> img) {
+    gap: 5px;
+  }
+
+  /* 記事画像 2枚以上連続の場合、横並び解除 */
+  article .content p:has(> img) img {
+    width: 100%;
   }
 }
 
