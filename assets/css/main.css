@@ -4,7 +4,7 @@
   --facebook: #1877f2;
   --feedly: #2bb24c;
   --github: #0e0c0d;
-  --hatena: #008fde;
+  --hatena: #00a4de;
   --instagram: #e1306c;
   --line: #00c300;
   --twitter: #14171a;
@@ -396,6 +396,11 @@ aside > div {
 .icon.youtube {
   background-color: var(--youtube);
   mask: url("../svg/tabler-icons/brand-youtube.svg");
+}
+
+.icon.hatena {
+  background-color: var(--hatena);
+  mask: url("../svg/simple-icons/hatenabookmark.svg");
 }
 
 .icon.line {
