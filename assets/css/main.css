@@ -1,5 +1,6 @@
 /* Brand colors */
 :root {
+  --bluesky: #1185fe;
   --facebook: #1877f2;
   --feedly: #2bb24c;
   --github: #0e0c0d;
@@ -375,6 +376,11 @@ aside > div {
 .icon.twitter {
   background-color: var(--twitter);
   mask: url("../svg/tabler-icons/brand-x.svg");
+}
+
+.icon.bluesky {
+  background-color: var(--bluesky);
+  mask: url("../svg/tabler-icons/brand-bluesky.svg");
 }
 
 .icon.instagram {

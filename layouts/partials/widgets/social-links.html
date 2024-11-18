@@ -13,21 +13,18 @@
     </a>
   {{ end }}
   {{ if $link.github }}
-    <a
-      href="https://github.com/{{ $link.github }}"
-      aria-label="GitHub"
-      target="_blank"
-    >
+    <a href="https://github.com/{{ $link.github }}" aria-label="GitHub" target="_blank">
       <span class="icon github"></span>
     </a>
   {{ end }}
   {{ if $link.twitter }}
-    <a
-      href="https://x.com/{{ $link.twitter }}"
-      aria-label="X (Twitter)"
-      target="_blank"
-    >
+    <a href="https://x.com/{{ $link.twitter }}" aria-label="X (Twitter)" target="_blank">
       <span class="icon twitter"></span>
+    </a>
+  {{ end }}
+  {{ if $link.bluesky }}
+    <a href="https://bsky.app/profile/{{ $link.bluesky }}" aria-label="Bluesky" target="_blank">
+      <span class="icon bluesky"></span>
     </a>
   {{ end }}
   {{ if $link.instagram }}

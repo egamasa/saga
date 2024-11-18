@@ -39,6 +39,7 @@ weight = 30
   email = 'my_email@example.com'
   github = 'github'
   twitter = 'twitter'
+  bluesky = 'bsky.app'
   instagram = 'instagram'
   facebook = 'https://www.facebook.com/facebook'
   youtube = 'https://www.youtube.com/user/YouTubeJapan'
