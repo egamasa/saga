@@ -1,7 +1,7 @@
 /* Brand colors */
 :root {
   --bluesky: #1185fe;
-  --facebook: #1877f2;
+  --facebook: #0866ff;
   --feedly: #2bb24c;
   --github: #0e0c0d;
   --hatena: #00a4de;
@@ -390,7 +390,7 @@ aside > div {
 
 .icon.facebook {
   background-color: var(--facebook);
-  mask: url("../svg/tabler-icons/brand-facebook.svg");
+  mask: url("../svg/simple-icons/facebook.svg");
 }
 
 .icon.youtube {
