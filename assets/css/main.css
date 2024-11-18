@@ -232,7 +232,7 @@ article .share {
   content: "";
   width: 9px;
   height: 10px;
-  margin: 0 0 0 3px;
+  margin: 2px 0 0 3px;
   border-style: solid;
   border-top: 5px solid transparent;
   border-bottom: 5px solid transparent;
