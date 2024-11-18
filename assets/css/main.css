@@ -5,7 +5,7 @@
   --feedly: #2bb24c;
   --github: #0e0c0d;
   --hatena: #00a4de;
-  --instagram: #e1306c;
+  --instagram: #e4405f;
   --line: #00c300;
   --twitter: #14171a;
   --youtube: #f00;
@@ -385,7 +385,7 @@ aside > div {
 
 .icon.instagram {
   background-color: var(--instagram);
-  mask: url("../svg/tabler-icons/brand-instagram.svg");
+  mask: url("../svg/simple-icons/instagram.svg");
 }
 
 .icon.facebook {
