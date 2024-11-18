@@ -1,13 +1,17 @@
 {{ define "main" }}
-  <article>
-    <h1>{{ .Title }}</h1>
+  <article class="single">
+    <section class="title">
+      <h1>{{ .Title }}</h1>
 
-    <section class="metadata">
-      {{ partial "article/metadata" . }}
-      {{ partial "article/share" . }}
+      <div class="metadata">
+        {{ partial "article/metadata" . }}
+        {{ partial "article/share" . }}
+      </div>
     </section>
 
-    {{ .Content }}
-    {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    <section class="content">
+      {{ .Content }}
+      {{ partial "terms.html" (dict "taxonomy" "tags" "page" .) }}
+    </section>
   </article>
 {{ end }}
