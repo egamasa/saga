@@ -6,7 +6,7 @@
   --github: #0e0c0d;
   --hatena: #008fde;
   --instagram: #e1306c;
-  --line: #06c755;
+  --line: #00c300;
   --twitter: #14171a;
   --youtube: #f00;
 }
@@ -396,6 +396,11 @@ aside > div {
 .icon.youtube {
   background-color: var(--youtube);
   mask: url("../svg/tabler-icons/brand-youtube.svg");
+}
+
+.icon.line {
+  background-color: var(--line);
+  mask: url("../svg/simple-icons/line.svg");
 }
 
 /* Widget: Categories */
