@@ -1,3 +1,7 @@
 {{ if site.Params.sideBar.showTags }}
   {{ partial "widgets/tags" }}
 {{ end }}
+
+{{ if site.Params.sideBar.showRecentArticles }}
+  {{ partial "widgets/recent-articles" }}
+{{ end }}

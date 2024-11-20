@@ -33,6 +33,10 @@ weight = 30
   showAuthor = true
   showSocial = true
   showTags = true
+  showRecentArticles = true
+
+[params.article]
+  recentArticlesCount = 3
 
 [params.social]
   website = 'https://example.com/my_url'

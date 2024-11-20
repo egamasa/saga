@@ -1,0 +1,43 @@
+<div class="widget recent-articles">
+  <div class="title">
+    <span>新着記事</span>
+  </div>
+
+  <ul>
+    {{ range site.RegularPages.ByDate.Reverse | first site.Params.article.recentArticlesCount }}
+      <li>
+        <a href="{{ .Permalink }}">
+          {{ if .Params.thumbnail }}
+            <div class="thumbnail">
+              <img src="{{ .Params.thumbnail | relURL }}" role="presentation" />
+            </div>
+          {{ end }}
+          <div class="metadata">
+            <span>
+              {{ .Title }}
+            </span>
+            <div class="recent-meta category">
+              <span>
+                {{ $categoriesData := site.Data.categories.items }}
+                {{ range .Params.categories | first 1 }}
+                  {{ $mapping := index (where $categoriesData "slug" "eq" .) 0 }}
+                  {{ if $mapping }}
+                    {{ $mapping.disp }}
+                  {{ else }}
+                    {{ . }}
+                  {{ end }}
+                {{ end }}
+              </span>
+            </div>
+            <div class="recent-meta date">
+              <span>
+                {{ $dateHuman := .Date | time.Format "2006/01/02" }}
+                {{ $dateHuman }}（{{ index (slice "日" "月" "火" "水" "木" "金" "土") .Date.Weekday }}）
+              </span>
+            </div>
+          </div>
+        </a>
+      </li>
+    {{ end }}
+  </ul>
+</div>
